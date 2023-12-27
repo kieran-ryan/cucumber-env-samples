@@ -1,8 +1,8 @@
 {
     "cucumber.features": [
-        "cuke4behave/features/**/*.feature",
+        "**/features/**/*.feature"
     ],
     "cucumber.glue": [
-        "cuke4behave/features/steps/**/*.py"
+        "**/features/steps/**/*.py"
     ]
 }

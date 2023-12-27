@@ -1,6 +1,7 @@
 from behave import given, then, when
-from behave.matchers import matcher_mapping
 from cucumber_expressions.parameter_type import ParameterType
+
+from environment import parameter_registry
 
 # Define the parameter type
 color = ParameterType(
@@ -12,25 +13,24 @@ color = ParameterType(
     prefer_for_regexp_match=False,
 )
 
+
 # Pass the parameter type to the registry instance
-matcher = matcher_mapping["cucumber_expressions"](None, "")
-parameter_registry = matcher.parameter_type_registry
 parameter_registry.define_parameter_type(color)
 
 
-@given("I am on the profile customization page")
+@given("I am on the profile customisation/settings page")
 def step_given(context):
     assert True
 
 
 # Reference the parameter type in the step definition pattern
-@when('I select the color "{color}"')
-def step_when(context, color):
+@when('I select the theme colo(u)r "{color}"')
+def step_when(context, selected_color):
     assert color
-    context.selected_color = color
+    context.selected_color = selected_color
 
 
-@then('the profile color should change to "{color}"')
-def step_then(context, color):
+@then('the profile colo(u)r should be "{color}"')
+def step_then(context, displayed_color):
     assert color
-    assert context.selected_color == color
+    assert context.selected_color == displayed_color
