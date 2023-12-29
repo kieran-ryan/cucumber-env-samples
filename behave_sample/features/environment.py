@@ -1,7 +1,7 @@
 from behave.matchers import use_step_matcher, matcher_mapping
 from cucumber_expressions.parameter_type_registry import ParameterTypeRegistry
 
-from cucumber_matcher import build_step_matcher
+from behave_cucumber_matcher import build_step_matcher
 
 # Initialise a Cucumber Expressions parameter registry
 parameter_registry = ParameterTypeRegistry()
