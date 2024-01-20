@@ -1,8 +1,8 @@
-# Python BDD Playground
+# Cucumber Environment Samples
 
-Playground for development of Python behaviour-driven-development tooling.
+Sample Cucumber environments in different languages and frameworks.
 
-## Using Cucumber Expressions in Behave
+## Behave
 
 Cucumber Expressions are presently unsupported natively by common Python testing frameworks. The following example demonstrates how to integrate support into [behave](https://behave.readthedocs.io).
 
@@ -10,4 +10,14 @@ Cucumber Expressions are presently unsupported natively by common Python testing
 cd behave_sample
 pip install --requirement requirements.txt
 behave
+```
+
+## Cucumber Rust
+
+Install dependencies and execute the test.
+
+```console
+cd cucumber-rs
+cargo build
+cargo test --test example
 ```
