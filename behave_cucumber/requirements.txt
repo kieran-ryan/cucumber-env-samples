@@ -1,2 +1,2 @@
-behave-cucumber-matcher==0.2.0
+behave-cucumber-matcher==0.3.0
 cucumber-expressions==17.0.2
