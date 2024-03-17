@@ -1,7 +1,6 @@
 from behave import given, then, when
+from behave_cucumber_matcher import parameter_registry
 from cucumber_expressions.parameter_type import ParameterType
-
-from environment import parameter_registry
 
 # Define the parameter type
 color_parameter = ParameterType(
@@ -9,6 +8,8 @@ color_parameter = ParameterType(
     regexp="red|blue|yellow",
     type=str,
     transformer=lambda s: s,
+    use_for_snippets=True,
+    prefer_for_regexp_match=False,
 )
 
 # Pass the parameter type to the registry instance
