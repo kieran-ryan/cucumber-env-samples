@@ -7,7 +7,6 @@ color_parameter = ParameterType(
     name="color",
     regexp="red|blue|yellow",
     type=str,
-    transformer=lambda s: s,
 )
 
 # Pass the parameter type to the registry instance
