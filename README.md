@@ -22,12 +22,22 @@ pip install --requirement requirements.txt
 behave
 ```
 
+## Cucumber JavaScript
+
+Install dependencies and execute the test.
+
+```console
+cd cucumber_js
+npm install
+npx cucumber-js
+```
+
 ## Cucumber Rust
 
 Install dependencies and execute the test.
 
 ```console
-cd cucumber-rs
+cd cucumber_rs
 cargo build
 cargo test --test example
 ```
