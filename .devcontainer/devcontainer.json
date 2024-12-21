@@ -22,7 +22,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install --user --requirement behave_default/requirements.txt --requirement behave_cucumber/requirements.txt; cd cucumber_js/ && npm install",
+	"postCreateCommand": "pip install --requirement behave_default/requirements.txt --requirement behave_cucumber/requirements.txt; cd cucumber_js/ && npm install & cd ..; cd cucumber_rs/ && cargo build; cd godog/ && go build",
 
 	// Configure tool-specific properties.
     "customizations": {
