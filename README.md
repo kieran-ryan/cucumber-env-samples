@@ -19,14 +19,14 @@ Running through the [devcontainer](https://marketplace.visualstudio.com/items?it
 Running Behave - a Python-based framework.
 
 ```console
-cd behave_default
+cd behave
 pip install --requirement requirements.txt
 behave
 ```
 
 ##### [Behave with Cucumber](https://github.com/kieran-ryan/behave-cucumber-matcher)
 
-Running Behave - a Python-based framework - with [Cucumber Expressions](https://github.com/cucumber/cucumber-expressions).
+Running Behave with [Cucumber Expressions](https://github.com/cucumber/cucumber-expressions).
 
 Cucumber Expressions are presently unsupported natively by common Python testing frameworks. The following example demonstrates how to integrate support into [behave](https://behave.readthedocs.io).
 
